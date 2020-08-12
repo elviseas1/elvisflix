@@ -11,6 +11,12 @@
             "nome": "Back End",
             "descricao": "Outra categori bacanuda",
             "cor": "#cbd1ff"
+        },
+        {
+            "id": 3,
+            "nome": "Prod End",
+            "descricao": "Novamente categori bacanuda",
+            "cor": "#cbd1ff"
         }
     ]
 }

@@ -29,8 +29,10 @@ function CadastroCategoria() {
 
   useEffect(() => {
     // console.log('Alo Brasil');
-    const url = 'http://localhost:8080/categorias';
-    fetch(url)
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://elvisflix.herokuapp.com/categorias';
+    fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
         setCategoria([
